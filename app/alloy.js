@@ -9,3 +9,6 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+Ti.Gesture.addEventListener('orientationchange', function(e) {
+	
+});

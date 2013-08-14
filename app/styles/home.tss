@@ -2,5 +2,6 @@
 	backgroundColor: "#2B6682",	
 	left: "100%",
 	top: "0",
-	navBarHidden: false
+	navBarHidden: false,
+	hideTabBar: true
 }

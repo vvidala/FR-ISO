@@ -9,6 +9,7 @@ function Controller() {
         left: "100%",
         top: "0",
         navBarHidden: false,
+        hideTabBar: true,
         id: "home"
     });
     $.__views.mainWindow = Ti.UI.createWindow({
@@ -21,18 +22,28 @@ function Controller() {
         id: "test"
     });
     $.__views.mainWindow.add($.__views.test);
-    $.__views.__alloyId0 = Ti.UI.createTab({
+    $.__views.__alloyId11 = Ti.UI.createTab({
         window: $.__views.mainWindow,
         title: "whatever",
-        id: "__alloyId0"
+        id: "__alloyId11"
     });
-    $.__views.home.addTab($.__views.__alloyId0);
+    $.__views.home.addTab($.__views.__alloyId11);
     $.__views.home && $.addTopLevelView($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    $.mainWindow.leftNavButton = Ti.UI.createButton({
+    var logout = Ti.UI.createButton({
         title: "Log Out",
         id: "logOut"
+    });
+    logout.addEventListener("click", function() {
+        Ti.API.info("closing view");
+        Ti.App.fireEvent("app:gotoLogin");
+    });
+    $.mainWindow.leftNavButton = logout;
+    Ti.Gesture.addEventListener("orientationchange", function() {
+        $.mainWindow.animate({
+            right: 0
+        });
     });
     var bb1 = Titanium.UI.createButtonBar({
         labels: [ "One", "Two", "Three" ],
