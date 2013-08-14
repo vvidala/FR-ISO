@@ -1,0 +1,70 @@
+".container": {
+	backgroundColor:"white",
+	backgroundImage:"images/Splash.jpg"
+},
+"Label": {
+	font: {
+		fontFamily: "Open Sans, Verdana, Geneva",
+		fontSize: "16dp"
+	},
+	color: "#ddd",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#header": {
+	height: "50dp",
+	width: "100%",
+	top: "2%"
+},
+"#message": {
+	top: "5",
+	font: {
+		fontWeight: "bold",
+		fontSize: "20dp"
+	}
+}
+"#loginMask": {
+	borderRadius: "10dp",
+	borderWidth: "2dp",
+	borderColor: "#ffffff",
+	backgroundColor: "#000000",
+	opacity: "0.6",
+	width: "400dp",
+	height: "300dp",
+	bottom: "17.5%"
+},
+"#login": {
+	backgroundColor: "transparent",
+	width: "280dp",
+	height: "280dp",
+	bottom: "18.5%",
+	layout: "vertical"
+},
+"TextField": {
+	paddingLeft: "10dp",
+	autoCorrect: "false"
+}
+"#copyright": {
+	bottom: "10dp"
+},
+"Button": {
+	font: {
+		fontFamily: "Open Sans, Verdana, Geneva",
+		fontSize: "16dp",
+		fontWeight: "bold"
+	},
+	backgroundLeftCap: "18dp",
+	backgroundTapCap: "18dp",
+	height: "40dp",
+	left:"10",
+	color: "#ddd"
+},
+".line": {
+	height: "1dp",
+	width: "100%",
+	borderColor: "#ddd",
+	backgroundColor: '#ddd'
+},
+"#forgotPassword": {
+	top: "10"
+}

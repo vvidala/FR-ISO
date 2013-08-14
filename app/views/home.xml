@@ -1,0 +1,9 @@
+<Alloy>
+	<TabGroup id="home" class="container"  platform="ios">
+		<Tab title="whatever">
+			<Window id="mainWindow" title="ISO" tabBarHidden="true" >
+				<Button id="test">Test</Button>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

@@ -1,0 +1,22 @@
+<Alloy>
+	<Window class="container">
+		<View id="header">
+			<ImageView image="/images/frc-logo-white.png" ></ImageView>
+		</View>
+		<View id="loginMask"></View>
+		<View id="login">
+			<Label id="message">Management Console Login</Label>
+			<TableView style="Ti.UI.iPhone.TableViewStyle.grouped" borderRadius="10dp" height="80dp" scrollable="false" top="10">
+				<TableViewRow><TextField hintText="Username" width="100%" height="40dp"></TextField></TableViewRow>
+				<TableViewRow><TextField hintText="Password" width="100%" height="40dp" passwordMask="true"></TextField></TableViewRow>
+			</TableView>
+			<View top="10" layout="horizontal" height="40dp">
+				<Button backgroundImage="/images/buttons/orangeButton.png" width="150dp"> Sign in with Google</Button>
+				<Button id="loginButton" backgroundImage="/images/buttons/blueButton.png" width="100dp"> Sign In</Button>
+			</View>
+			<View class="line" top="30"></View>
+			<Label id="forgotPassword" top="20">Forgot Password?</Label>
+		</View>
+		<Label id="copyright">© 2013 Dominion Enterprises</Label>
+	</Window>
+</Alloy>
