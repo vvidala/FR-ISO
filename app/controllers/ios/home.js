@@ -51,5 +51,6 @@ $.isoTable.addEventListener('click', function(e){
 		title: "River View Park Apartment Homes",
 		data: e.rowData
 	});
-	$.mainWindow.open(win);
+	$.mainWindow.conta.open(win);
+	$.mainWindow.
 })
