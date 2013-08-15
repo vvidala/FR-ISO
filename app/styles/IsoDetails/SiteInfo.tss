@@ -1,10 +1,10 @@
 ".container": {
 	backgroundColor: "transparent",
-	height: "120dp"
+	height: "150dp"
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "110dp",
+	height: "140dp",
 	borderRadius: "12dp",
 	width: "98%"
 }
@@ -26,6 +26,20 @@
 	ellipsize: true,
 	top: "5dp",
 	left: "5dp",
+	color: "#111",
+	width: "100%"
+},
+".fragment": {
+	width: "98%",
+	top: "5dp"
+},
+".heading": {
+	font: {
+		fontSize: "20dp",
+		fontWeight: "bold"
+	},
+	top: 0,
+	ellipsize: true,
 	color: "#111",
 	width: "100%"
 }

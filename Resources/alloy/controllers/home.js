@@ -23,12 +23,12 @@ function Controller() {
         separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });
     $.__views.mainWindow.add($.__views.isoTable);
-    $.__views.__alloyId43 = Ti.UI.createTab({
+    $.__views.__alloyId46 = Ti.UI.createTab({
         window: $.__views.mainWindow,
         title: "whatever",
-        id: "__alloyId43"
+        id: "__alloyId46"
     });
-    $.__views.home.addTab($.__views.__alloyId43);
+    $.__views.home.addTab($.__views.__alloyId46);
     $.__views.home && $.addTopLevelView($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);
