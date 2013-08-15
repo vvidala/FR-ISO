@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="home" title="Internet Service Order" navBarHidden="false">
+	<Window id="home" class="container" title="Internet Service Order" navBarHidden="false">
         <Menu id="menu" platform="android">
             <MenuItem id="menuItem" title="Search" icon="/images/action_search.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
             <MenuItem id="menuItem" title="Refresh" icon="/images/navigation_refresh.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />

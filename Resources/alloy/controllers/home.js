@@ -4,51 +4,55 @@ function Controller() {
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
-    $.__views.home = Ti.UI.createWindow({
-        id: "home",
-        title: "Internet Service Order",
-        navBarHidden: "false"
+    $.__views.home = Ti.UI.createTabGroup({
+        backgroundColor: "#cccccc",
+        left: "100%",
+        top: "0",
+        navBarHidden: false,
+        hideTabBar: true,
+        id: "home"
     });
-    $.__views.home && $.addTopLevelView($.__views.home);
-    $.__views.home.activity.onCreateOptionsMenu = function(e) {
-        var __alloyId17 = {
-            id: "menuItem",
-            title: "Search",
-            icon: "/images/action_search.png",
-            showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
-        };
-        $.__views.menuItem = e.menu.add(_.pick(__alloyId17, Alloy.Android.menuItemCreateArgs));
-        $.__views.menuItem.applyProperties(_.omit(__alloyId17, Alloy.Android.menuItemCreateArgs));
-        var __alloyId18 = {
-            id: "menuItem",
-            title: "Refresh",
-            icon: "/images/navigation_refresh.png",
-            showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
-        };
-        $.__views.menuItem = e.menu.add(_.pick(__alloyId18, Alloy.Android.menuItemCreateArgs));
-        $.__views.menuItem.applyProperties(_.omit(__alloyId18, Alloy.Android.menuItemCreateArgs));
-        var __alloyId19 = {
-            id: "menuItem",
-            title: "Item 3",
-            icon: "/images/action_about.png",
-            showAsAction: Ti.Android.SHOW_AS_ACTION_NEVER
-        };
-        $.__views.menuItem = e.menu.add(_.pick(__alloyId19, Alloy.Android.menuItemCreateArgs));
-        $.__views.menuItem.applyProperties(_.omit(__alloyId19, Alloy.Android.menuItemCreateArgs));
-    };
+    $.__views.mainWindow = Ti.UI.createWindow({
+        id: "mainWindow",
+        title: "ISO",
+        tabBarHidden: "true"
+    });
     $.__views.isoTable = Ti.UI.createTableView({
         backgroundColor: "#cccccc",
         id: "isoTable",
         separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });
-    $.__views.home.add($.__views.isoTable);
+    $.__views.mainWindow.add($.__views.isoTable);
+    $.__views.__alloyId16 = Ti.UI.createTab({
+        window: $.__views.mainWindow,
+        title: "whatever",
+        id: "__alloyId16"
+    });
+    $.__views.home.addTab($.__views.__alloyId16);
+    $.__views.home && $.addTopLevelView($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    $.home;
-    Ti.API.info("Building android menu");
+    var logout = Ti.UI.createButton({
+        title: "Log Out",
+        id: "logOut"
+    });
+    logout.addEventListener("click", function() {
+        Ti.API.info("closing view");
+        Ti.App.fireEvent("app:gotoLogin");
+    });
+    $.mainWindow.leftNavButton = logout;
+    var bb1 = Titanium.UI.createButtonBar({
+        labels: [ "One", "Two", "Three" ],
+        backgroundColor: "#336699",
+        top: 50,
+        style: Titanium.UI.iPhone.SystemButtonStyle.BAR,
+        height: 25,
+        width: 200
+    });
+    $.mainWindow.rightNavButton = bb1;
     var rows = [];
-    var websites = [ "/images/frc-apple-touch-icon.png", "/images/prc-apple-touch-icon.png", "/images/fru-apple-touch-icon.gif" ];
-    var type = [ "/images/new-icon.png", "/images/thumbs-up-icon.png", "/images/thumbs-down-icon.png" ];
+    var websites = [ "images/frc-apple-touch-icon.png", "/images/prc-apple-touch-icon.png", "/images/fru-apple-touch-icon.gif" ];
+    var type = [ "images/new-icon.png", "images/thumbs-up-icon.png", "images/thumbs-down-icon.png" ];
     for (var i = 0; 10 > i; i++) {
         var row = Alloy.createController("IsoTableViewRow");
         row.websiteIcon.image = websites[Math.floor(3 * Math.random())];
@@ -58,10 +62,11 @@ function Controller() {
     $.isoTable.data = rows;
     $.isoTable.addEventListener("click", function(e) {
         Ti.API.info("click recieved");
-        Ti.UI.createWindow({
+        var win = Ti.UI.createWindow({
             title: "River View Park Apartment Homes",
             data: e.rowData
         });
+        $.home.activeTab.open(win);
     });
     _.extend($, exports);
 }

@@ -41,9 +41,9 @@ function Controller() {
             fontSize: "18dp",
             fontWeight: "bold"
         },
+        color: "#333",
         top: "5dp",
         left: "5dp",
-        color: "#333",
         text: "River View Park Aparment Homes",
         id: "aptName"
     });
@@ -53,9 +53,9 @@ function Controller() {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
         },
+        color: "#333",
         top: "5dp",
         left: "5dp",
-        color: "#333",
         text: "Norfolk, VA (Pine Creek Investments)",
         id: "location"
     });
@@ -72,9 +72,9 @@ function Controller() {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
         },
+        color: "#333",
         top: "7dp",
         left: "5dp",
-        color: "#333",
         text: "Mar 01, 2011 - Mar 31, 2011",
         id: "timeFrame"
     });
@@ -84,9 +84,9 @@ function Controller() {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
         },
+        color: "#333",
         top: "5dp",
         left: "5dp",
-        color: "#333",
         text: "Assigned To: sderbes",
         id: "assignedTo"
     });

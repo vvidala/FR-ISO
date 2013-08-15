@@ -1,0 +1,7 @@
+"Label": {
+	font: {
+		fontFamily: "Open Sans, Verdana, Geneva",
+		fontSize: "16dp"
+	},
+	color: "#ddd"
+}

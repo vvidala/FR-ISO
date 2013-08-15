@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor: "#2B6682",	
+	backgroundColor: "#cccccc",	
 	left: "100%",
 	top: "0",
 	navBarHidden: false,

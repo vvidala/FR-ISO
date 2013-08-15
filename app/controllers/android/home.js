@@ -1,8 +1,4 @@
-var self = $.home;
-
 Ti.API.info("Building android menu");
-
-
 
 var rows = [];
 var websites = [
@@ -24,11 +20,13 @@ for(var i=0; i<10; i++){
 }
 $.isoTable.data = rows;
 $.isoTable.addEventListener('click', function(e){
-	Ti.API.info('click recieved');
+	//alert('click recieved');
+	Ti.API.info($.home.title);
 	var win = Ti.UI.createWindow({
-		title: "River View Park Apartment Homes",
-		data: e.rowData
+		title: "River View Park Apartment Homes"
 	});
-	//$.home.activeTab.open(win);
+	//Titanium.UI.currentWindow.open(win,{animated:true});
+	//$.home.open(win, {animated: true});
+	win.open();
 	//$.mainWindow.containingTab.open(win);
 })

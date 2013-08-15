@@ -1,0 +1,5 @@
+".container": {
+	backgroundColor: "#cccccc",
+	navBarHidden: false,
+	hideTabBar: true
+}
