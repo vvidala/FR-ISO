@@ -66,10 +66,11 @@ function Controller() {
     $.isoTable.data = rows;
     $.isoTable.addEventListener("click", function(e) {
         Ti.API.info("click recieved");
-        Ti.UI.createWindow({
+        var win = Ti.UI.createWindow({
             title: "River View Park Apartment Homes",
             data: e.rowData
         });
+        $.home.activeTab.open(win);
     });
     _.extend($, exports);
 }
