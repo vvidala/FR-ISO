@@ -38,3 +38,5 @@ $.forgotPassword.addEventListener('click', function(e) {
     Titanium.Platform.openURL('http://forrent.com/contactus.php');
 });
 $.index.open();
+
+$.loginButton.fireEvent('click');

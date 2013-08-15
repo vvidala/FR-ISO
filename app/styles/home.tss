@@ -4,4 +4,7 @@
 	top: "0",
 	navBarHidden: false,
 	hideTabBar: true
+},
+"TableView": {
+	backgroundColor: "#cccccc"
 }

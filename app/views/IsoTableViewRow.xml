@@ -1,0 +1,20 @@
+<Alloy>
+	<TableViewRow class="container" hasChild="false">
+		<View id="contents">
+			<View width="8%" left="0%">
+				<ImageView id="websiteIcon" image="/images/fru-apple-touch-icon.gif" height="80%"></ImageView>
+			</View>
+			<View layout="vertical" width="52%" left="8%">
+				<Label id="aptName">River View Park Aparment Homes</Label>
+				<Label id="location">Norfolk, VA (Pine Creek Investments)</Label>
+			</View>
+			<View layout="vertical" width="32%" left="60%">
+				<Label id="timeFrame">Mar 01, 2011 - Mar 31, 2011</Label>
+				<Label id="assignedTo">Assigned To: sderbes</Label>
+			</View>
+			<View width="8%" right="0%">
+				<ImageView id="typeIcon" image="/images/thumbs-up-icon.png" height="80%"></ImageView>
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

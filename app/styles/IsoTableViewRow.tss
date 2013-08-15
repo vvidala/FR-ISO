@@ -1,0 +1,28 @@
+".container": {
+	backgroundColor: "transparent",
+	height: "62dp"
+},
+"#contents": {
+	backgroundColor: "#eee",
+	height: "60dp"
+}
+"Label": {
+	font: {
+		fontFamily: "Open Sans, Verdana, Geneva",
+		fontSize: "16dp"
+	},
+	top: "5dp",
+	left: "5dp",
+	color: "#333"
+},
+"#aptName": {
+	font: {
+		fontSize: "18dp",
+		fontWeight: "bold"
+	}
+},
+"#location": {
+}
+"#timeFrame": {
+	top: "7dp"
+}

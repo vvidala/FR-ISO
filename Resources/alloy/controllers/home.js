@@ -17,17 +17,18 @@ function Controller() {
         title: "ISO",
         tabBarHidden: "true"
     });
-    $.__views.test = Ti.UI.createButton({
-        title: "Test",
-        id: "test"
+    $.__views.isoTable = Ti.UI.createTableView({
+        backgroundColor: "#cccccc",
+        id: "isoTable",
+        separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });
-    $.__views.mainWindow.add($.__views.test);
-    $.__views.__alloyId11 = Ti.UI.createTab({
+    $.__views.mainWindow.add($.__views.isoTable);
+    $.__views.__alloyId16 = Ti.UI.createTab({
         window: $.__views.mainWindow,
         title: "whatever",
-        id: "__alloyId11"
+        id: "__alloyId16"
     });
-    $.__views.home.addTab($.__views.__alloyId11);
+    $.__views.home.addTab($.__views.__alloyId16);
     $.__views.home && $.addTopLevelView($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);
@@ -40,11 +41,6 @@ function Controller() {
         Ti.App.fireEvent("app:gotoLogin");
     });
     $.mainWindow.leftNavButton = logout;
-    Ti.Gesture.addEventListener("orientationchange", function() {
-        $.mainWindow.animate({
-            right: 0
-        });
-    });
     var bb1 = Titanium.UI.createButtonBar({
         labels: [ "One", "Two", "Three" ],
         backgroundColor: "#336699",
@@ -54,12 +50,27 @@ function Controller() {
         width: 200
     });
     $.mainWindow.rightNavButton = bb1;
-    $.test.addEventListener("click", function() {
+    var row = Alloy.createController("IsoTableViewRow").getView();
+    var row2 = Alloy.createController("IsoTableViewRow");
+    row2.websiteIcon.image = "/images/prc-apple-touch-icon.png";
+    row2.typeIcon.image = "/images/new-icon.png";
+    var rows = [];
+    var websites = [ "images/frc-apple-touch-icon.png", "/images/prc-apple-touch-icon.png", "/images/fru-apple-touch-icon.gif" ];
+    var type = [ "images/new-icon.png", "images/thumbs-up-icon.png", "images/thumbs-down-icon.png" ];
+    for (var i = 0; 10 > i; i++) {
+        var row = Alloy.createController("IsoTableViewRow");
+        row.websiteIcon.image = websites[Math.floor(3 * Math.random())];
+        row.typeIcon.image = type[Math.floor(3 * Math.random())];
+        rows.push(row.getView());
+    }
+    $.isoTable.data = rows;
+    $.isoTable.addEventListener("click", function(e) {
+        Ti.API.info("click recieved");
         var win = Ti.UI.createWindow({
-            title: "Test",
-            hideTabBar: true
+            title: "River View Park Apartment Homes",
+            data: e.rowData
         });
-        $.home.activeTab.open(win);
+        $.mainWindow.open(win);
     });
     _.extend($, exports);
 }

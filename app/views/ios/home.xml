@@ -1,8 +1,8 @@
 <Alloy>
 	<TabGroup id="home" class="container">
 		<Tab title="whatever">
-			<Window id="mainWindow" title="ISO" tabBarHidden="true" >
-				<Button id="test">Test</Button>
+			<Window id="mainWindow" title="ISO" tabBarHidden="true">
+				<TableView id="isoTable" separatorStyle="Ti.UI.iPhone.TableViewSeparatorStyle.NONE"></TableView>
 			</Window>
 		</Tab>
 	</TabGroup>
