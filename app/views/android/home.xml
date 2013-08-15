@@ -1,9 +1,10 @@
 <Alloy>
-	<TabGroup id="home" class="container">
-		<Tab title="whatever">
-			<Window id="mainWindow" title="ISO" tabBarHidden="true" >
-				<Button id="test">Test</Button>
-			</Window>
-		</Tab>
-	</TabGroup>
+	<Window id="home" title="Internet Service Order" navBarHidden="false">
+        <Menu id="menu" platform="android">
+            <MenuItem id="menuItem" title="Search" icon="/images/action_search.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+            <MenuItem id="menuItem" title="Refresh" icon="/images/navigation_refresh.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+            <MenuItem id="menuItem" title="Item 3" icon="/images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
+        </Menu> 
+		<TableView id="isoTable" separatorStyle="Ti.UI.iPhone.TableViewSeparatorStyle.NONE"></TableView>
+	</Window>
 </Alloy>

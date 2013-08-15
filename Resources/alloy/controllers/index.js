@@ -180,15 +180,16 @@ function Controller() {
         left: "100%",
         duration: 300
     });
-    var slide_it_right = Titanium.UI.createAnimation({
-        left: "-100%",
-        duration: 300
-    });
+    {
+        Titanium.UI.createAnimation({
+            left: "-100%",
+            duration: 300
+        });
+    }
     var home;
     $.loginButton.addEventListener("click", function() {
         home = Alloy.createController("home").getView();
-        $.index.animate(slide_it_right);
-        home.open(slide_to_view);
+        home.open();
     });
     Ti.App.addEventListener("app:gotoLogin", function() {
         Ti.API.info("got login");

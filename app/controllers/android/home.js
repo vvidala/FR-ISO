@@ -1,32 +1,34 @@
 var self = $.home;
 
 Ti.API.info("Building android menu");
-/*
-var activity = $.home.activity;
-activity.actionBar.title = "TiBHClassic";
-activity.actionBar.displayHomeAsUp = true; 
-activity.invalidateOptionsMenu();
 
-activity.onCreateOptionsMenu = function(e) {
-    Ti.API.info($.home.activeTab.title + ' onCreateOptionsMenu');
-    var menu = e.menu;
-    var m1 = menu.add({ 
-    	title : L('add'),
-    	icon: '/images/ic_action_add_icon.png',
-    	visible: 'true',
-    	showAsAction: Ti.Android.SHOW_AS_ACTION_IF_ROOM
-     });
-    m1.addEventListener('click', function(e) {
-    	//open in tab group to get free title bar (android)
-        Ti.API.info($.home.activeTab.title + ' add clicked');
-    });
-};
-*/
 
-$.test.addEventListener('click', function(e){
+
+var rows = [];
+var websites = [
+	"/images/frc-apple-touch-icon.png", 
+	"/images/prc-apple-touch-icon.png", 
+	"/images/fru-apple-touch-icon.gif"
+];
+
+var type = [
+	"/images/new-icon.png",
+	"/images/thumbs-up-icon.png",
+	"/images/thumbs-down-icon.png"
+]
+for(var i=0; i<10; i++){ 
+	var row = Alloy.createController('IsoTableViewRow');
+	row.websiteIcon.image = websites[Math.floor((Math.random()*3))];
+	row.typeIcon.image = type[Math.floor((Math.random()*3))];
+	rows.push(row.getView());
+}
+$.isoTable.data = rows;
+$.isoTable.addEventListener('click', function(e){
+	Ti.API.info('click recieved');
 	var win = Ti.UI.createWindow({
-		title: "Test",
-		hideTabBar: true
+		title: "River View Park Apartment Homes",
+		data: e.rowData
 	});
-	$.home.activeTab.open(win);
-});
+	//$.home.activeTab.open(win);
+	//$.mainWindow.containingTab.open(win);
+})

@@ -22,10 +22,6 @@ var bb1 = Titanium.UI.createButtonBar({
 
 $.mainWindow.rightNavButton = bb1;
 
-var row = Alloy.createController('IsoTableViewRow').getView();
-var row2 = Alloy.createController('IsoTableViewRow');
-row2.websiteIcon.image = "/images/prc-apple-touch-icon.png";
-row2.typeIcon.image = "/images/new-icon.png";
 var rows = [];
 var websites = [
 	"images/frc-apple-touch-icon.png", 
