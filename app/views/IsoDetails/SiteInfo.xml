@@ -1,0 +1,30 @@
+<Alloy>
+	<TableViewRow class="container" hasChild="false">
+		<View id="contents">
+			<View layout="vertical" width="15%" left="1%" top="1%">
+				<Label>Apt Name:</Label>
+				<Label>PMC:</Label>
+				<Label>City Office:</Label>
+				<Label>Employee:</Label>
+			</View>
+			<View layout="vertical" width="44%" left="16%" top="1%">
+				<Label id="aptName" class="dynamic">River View Park Aparment Homes</Label>
+				<Label id="pmc" class="dynamic">Pine Creek Investments</Label>
+				<Label id="cityOffice" class="dynamic">Atlanta, GA</Label>
+				<Label id="employee" class="dynamic">WHITNEY A SULLENDER</Label>
+			</View>
+			<View layout="vertical" width="15%" left="60%" top="1%">
+				<Label>Site Id:</Label>
+				<Label>Assigned To:</Label>
+				<Label>Account #:</Label>
+				<Label>Contract #:</Label>
+			</View>
+			<View layout="vertical" width="24%" left="75%" top="1%">
+				<Label id="siteId" class="dynamic">1000010783</Label>
+				<Label id="assignedTo" class="dynamic">sderbes</Label>
+				<Label id="accountNum" class="dynamic">1300574</Label>
+				<Label id="contractNum" class="dynamic">---------</Label>
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

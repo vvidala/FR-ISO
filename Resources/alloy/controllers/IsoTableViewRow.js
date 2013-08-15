@@ -17,25 +17,25 @@ function Controller() {
         id: "contents"
     });
     $.__views.IsoTableViewRow.add($.__views.contents);
-    $.__views.__alloyId1 = Ti.UI.createView({
+    $.__views.__alloyId0 = Ti.UI.createView({
         width: "8%",
         left: "0%",
-        id: "__alloyId1"
+        id: "__alloyId0"
     });
-    $.__views.contents.add($.__views.__alloyId1);
+    $.__views.contents.add($.__views.__alloyId0);
     $.__views.websiteIcon = Ti.UI.createImageView({
         id: "websiteIcon",
         image: "/images/fru-apple-touch-icon.gif",
         height: "80%"
     });
-    $.__views.__alloyId1.add($.__views.websiteIcon);
-    $.__views.__alloyId2 = Ti.UI.createView({
+    $.__views.__alloyId0.add($.__views.websiteIcon);
+    $.__views.__alloyId1 = Ti.UI.createView({
         layout: "vertical",
         width: "52%",
         left: "8%",
-        id: "__alloyId2"
+        id: "__alloyId1"
     });
-    $.__views.contents.add($.__views.__alloyId2);
+    $.__views.contents.add($.__views.__alloyId1);
     $.__views.aptName = Ti.UI.createLabel({
         font: {
             fontSize: "18dp",
@@ -47,7 +47,7 @@ function Controller() {
         text: "River View Park Aparment Homes",
         id: "aptName"
     });
-    $.__views.__alloyId2.add($.__views.aptName);
+    $.__views.__alloyId1.add($.__views.aptName);
     $.__views.location = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -59,14 +59,14 @@ function Controller() {
         text: "Norfolk, VA (Pine Creek Investments)",
         id: "location"
     });
-    $.__views.__alloyId2.add($.__views.location);
-    $.__views.__alloyId3 = Ti.UI.createView({
+    $.__views.__alloyId1.add($.__views.location);
+    $.__views.__alloyId2 = Ti.UI.createView({
         layout: "vertical",
         width: "32%",
         left: "60%",
-        id: "__alloyId3"
+        id: "__alloyId2"
     });
-    $.__views.contents.add($.__views.__alloyId3);
+    $.__views.contents.add($.__views.__alloyId2);
     $.__views.timeFrame = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -78,7 +78,7 @@ function Controller() {
         text: "Mar 01, 2011 - Mar 31, 2011",
         id: "timeFrame"
     });
-    $.__views.__alloyId3.add($.__views.timeFrame);
+    $.__views.__alloyId2.add($.__views.timeFrame);
     $.__views.assignedTo = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -90,19 +90,19 @@ function Controller() {
         text: "Assigned To: sderbes",
         id: "assignedTo"
     });
-    $.__views.__alloyId3.add($.__views.assignedTo);
-    $.__views.__alloyId4 = Ti.UI.createView({
+    $.__views.__alloyId2.add($.__views.assignedTo);
+    $.__views.__alloyId3 = Ti.UI.createView({
         width: "8%",
         right: "0%",
-        id: "__alloyId4"
+        id: "__alloyId3"
     });
-    $.__views.contents.add($.__views.__alloyId4);
+    $.__views.contents.add($.__views.__alloyId3);
     $.__views.typeIcon = Ti.UI.createImageView({
         id: "typeIcon",
         image: "/images/thumbs-up-icon.png",
         height: "80%"
     });
-    $.__views.__alloyId4.add($.__views.typeIcon);
+    $.__views.__alloyId3.add($.__views.typeIcon);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

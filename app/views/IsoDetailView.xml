@@ -1,5 +1,6 @@
 <Alloy>
-	<Window class="container">
-		
+	<Window class="container" title="River View Park Apartment Homes">
+		<TableView id="isoDetailTable" separatorStyle="Ti.UI.iPhone.TableViewSeparatorStyle.NONE">
+		</TableView>
 	</Window>
 </Alloy>

@@ -2,4 +2,7 @@
 	backgroundColor: "#cccccc",
 	navBarHidden: false,
 	hideTabBar: true
+},
+"TableView": {
+	backgroundColor: "#cccccc"
 }

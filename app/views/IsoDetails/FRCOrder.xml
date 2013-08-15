@@ -1,0 +1,36 @@
+<Alloy>
+	<TableViewRow class="container" hasChild="false">
+		<View id="contents" layout="vertical">
+			<View class="fragment" height="20dp">
+				<Label class="heading">ForRent.Com</Label>
+			</View>
+			<View class="fragment" height="100dp">
+				<View layout="vertical" width="15%" left="0%">
+					<Label>Campaign Start:</Label>
+					<Label>Print Ad Size:</Label>
+					<Label>FRU Package:</Label>
+					<Label># of spotlights:</Label>
+				</View>
+				<View layout="vertical" width="45%" left="15%">
+					<Label id="campaignDate" class="dynamic">2013-09-12</Label>
+					<Label id="printAdSize" class="dynamic"> ______ </Label>
+					<Label id="fruPackage" class="dynamic"> ______ </Label>
+					<Label id="numSpotlights" class="dynamic">0</Label>
+				</View>
+				<View layout="vertical" width="15%" left="60%">
+					<Label>Billing Date:</Label>
+					<Label>Internet Package:</Label>
+					<Label>Translation Upg:</Label>
+				</View>
+				<View layout="vertical" width="25%" left="75%">
+					<Label id="billDate" class="dynamic">2013-09-15</Label>
+					<Label id="internetPkg" class="dynamic"> ______ </Label>
+					<Label id="translationUpg" class="dynamic">NO</Label>
+				</View>
+			</View>
+			<View class="fragment" height="90dp" top="0" layout="horizontal">
+				<Label>Comments: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Label>
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

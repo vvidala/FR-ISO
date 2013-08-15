@@ -17,11 +17,11 @@ function Controller() {
         id: "header"
     });
     $.__views.index.add($.__views.header);
-    $.__views.__alloyId6 = Ti.UI.createImageView({
+    $.__views.__alloyId5 = Ti.UI.createImageView({
         image: "/images/frc-logo-white.png",
-        id: "__alloyId6"
+        id: "__alloyId5"
     });
-    $.__views.header.add($.__views.__alloyId6);
+    $.__views.header.add($.__views.__alloyId5);
     $.__views.loginMask = Ti.UI.createView({
         borderRadius: "10dp",
         borderWidth: "2dp",
@@ -56,52 +56,52 @@ function Controller() {
         id: "message"
     });
     $.__views.login.add($.__views.message);
-    $.__views.__alloyId8 = Ti.UI.createTableViewRow({
-        id: "__alloyId8"
+    $.__views.__alloyId7 = Ti.UI.createTableViewRow({
+        id: "__alloyId7"
     });
-    var __alloyId9 = [];
-    __alloyId9.push($.__views.__alloyId8);
-    $.__views.__alloyId10 = Ti.UI.createTextField({
+    var __alloyId8 = [];
+    __alloyId8.push($.__views.__alloyId7);
+    $.__views.__alloyId9 = Ti.UI.createTextField({
         paddingLeft: "10dp",
         autoCorrect: "false",
         hintText: "Username",
         width: "100%",
         height: "40dp",
+        id: "__alloyId9"
+    });
+    $.__views.__alloyId7.add($.__views.__alloyId9);
+    $.__views.__alloyId10 = Ti.UI.createTableViewRow({
         id: "__alloyId10"
     });
-    $.__views.__alloyId8.add($.__views.__alloyId10);
-    $.__views.__alloyId11 = Ti.UI.createTableViewRow({
-        id: "__alloyId11"
-    });
-    __alloyId9.push($.__views.__alloyId11);
-    $.__views.__alloyId12 = Ti.UI.createTextField({
+    __alloyId8.push($.__views.__alloyId10);
+    $.__views.__alloyId11 = Ti.UI.createTextField({
         paddingLeft: "10dp",
         autoCorrect: "false",
         hintText: "Password",
         width: "100%",
         height: "40dp",
         passwordMask: "true",
-        id: "__alloyId12"
+        id: "__alloyId11"
     });
-    $.__views.__alloyId11.add($.__views.__alloyId12);
-    $.__views.__alloyId7 = Ti.UI.createTableView({
-        data: __alloyId9,
+    $.__views.__alloyId10.add($.__views.__alloyId11);
+    $.__views.__alloyId6 = Ti.UI.createTableView({
+        data: __alloyId8,
         style: Ti.UI.iPhone.TableViewStyle.grouped,
         borderRadius: "10dp",
         height: "80dp",
         scrollable: "false",
         top: "10",
-        id: "__alloyId7"
+        id: "__alloyId6"
     });
-    $.__views.login.add($.__views.__alloyId7);
-    $.__views.__alloyId13 = Ti.UI.createView({
+    $.__views.login.add($.__views.__alloyId6);
+    $.__views.__alloyId12 = Ti.UI.createView({
         top: "10",
         layout: "horizontal",
         height: "40dp",
-        id: "__alloyId13"
+        id: "__alloyId12"
     });
-    $.__views.login.add($.__views.__alloyId13);
-    $.__views.__alloyId14 = Ti.UI.createButton({
+    $.__views.login.add($.__views.__alloyId12);
+    $.__views.__alloyId13 = Ti.UI.createButton({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp",
@@ -115,9 +115,9 @@ function Controller() {
         title: "Sign in with Google",
         backgroundImage: "/images/buttons/orangeButton.png",
         width: "150dp",
-        id: "__alloyId14"
+        id: "__alloyId13"
     });
-    $.__views.__alloyId13.add($.__views.__alloyId14);
+    $.__views.__alloyId12.add($.__views.__alloyId13);
     $.__views.loginButton = Ti.UI.createButton({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -134,16 +134,16 @@ function Controller() {
         backgroundImage: "/images/buttons/blueButton.png",
         width: "100dp"
     });
-    $.__views.__alloyId13.add($.__views.loginButton);
-    $.__views.__alloyId15 = Ti.UI.createView({
+    $.__views.__alloyId12.add($.__views.loginButton);
+    $.__views.__alloyId14 = Ti.UI.createView({
         height: "1dp",
         width: "100%",
         borderColor: "#ddd",
         backgroundColor: "#ddd",
         top: "30",
-        id: "__alloyId15"
+        id: "__alloyId14"
     });
-    $.__views.login.add($.__views.__alloyId15);
+    $.__views.login.add($.__views.__alloyId14);
     $.__views.forgotPassword = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",

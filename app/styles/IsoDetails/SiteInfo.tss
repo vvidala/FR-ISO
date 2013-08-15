@@ -1,0 +1,31 @@
+".container": {
+	backgroundColor: "transparent",
+	height: "120dp"
+},
+"#contents": {
+	backgroundColor: "#eee",
+	height: "110dp",
+	borderRadius: "12dp",
+	width: "98%"
+}
+"Label": {
+	font: {
+		fontFamily: "Open Sans, Verdana, Geneva",
+		fontSize: "16dp"
+	},
+	top: "5dp",
+	left: "5dp",
+	color: "#333"
+},
+".dynamic": {
+	font: {
+		fontFamily: "Open Sans, Verdana, Geneva",
+		fontWeight: "bold",
+		fontSize: "16dp"
+	},
+	ellipsize: true,
+	top: "5dp",
+	left: "5dp",
+	color: "#111",
+	width: "100%"
+}

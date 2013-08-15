@@ -23,12 +23,12 @@ function Controller() {
         separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });
     $.__views.mainWindow.add($.__views.isoTable);
-    $.__views.__alloyId16 = Ti.UI.createTab({
+    $.__views.__alloyId43 = Ti.UI.createTab({
         window: $.__views.mainWindow,
         title: "whatever",
-        id: "__alloyId16"
+        id: "__alloyId43"
     });
-    $.__views.home.addTab($.__views.__alloyId16);
+    $.__views.home.addTab($.__views.__alloyId43);
     $.__views.home && $.addTopLevelView($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);
@@ -62,11 +62,9 @@ function Controller() {
     $.isoTable.data = rows;
     $.isoTable.addEventListener("click", function(e) {
         Ti.API.info("click recieved");
-        var win = Ti.UI.createWindow({
-            title: "River View Park Apartment Homes",
-            data: e.rowData
-        });
-        $.home.activeTab.open(win);
+        var detailWindow = Alloy.createController("IsoDetailView").getView();
+        detailWindow.data = e.rowData;
+        $.home.activeTab.open(detailWindow);
     });
     _.extend($, exports);
 }

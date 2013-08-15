@@ -43,10 +43,8 @@ for(var i=0; i<10; i++){
 $.isoTable.data = rows;
 $.isoTable.addEventListener('click', function(e){
 	Ti.API.info('click recieved');
-	var win = Ti.UI.createWindow({
-		title: "River View Park Apartment Homes",
-		data: e.rowData
-	});
-	$.home.activeTab.open(win);
+	var detailWindow = Alloy.createController('IsoDetailView').getView();
+	detailWindow.data = e.rowData;
+	$.home.activeTab.open(detailWindow);
 	//$.mainWindow.containingTab.open(win);
 })
