@@ -1,10 +1,10 @@
 <Alloy>
 	<TableViewRow class="container" hasChild="false">
 		<View id="contents" layout="vertical">
-			<View class="fragment" height="20dp">
-				<Label class="heading">ForRent.Com</Label>
+			<View class="fragment" height="25dp">
+				<Label class="heading">ForRent.Com Order</Label>
 			</View>
-			<View class="fragment" height="100dp">
+			<View class="fragment" height="110dp">
 				<View layout="vertical" width="25%" left="0%">
 					<Label>Campaign Start:</Label>
 					<Label>Print Ad Size:</Label>

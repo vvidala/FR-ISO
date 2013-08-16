@@ -1,15 +1,12 @@
 <Alloy>
 	<TableViewRow class="container" hasChild="false" touchEnabled="false">
 		<View id="contents" layout="vertical" touchEnabled="false">
-			<View class="fragment" height="20dp" layout="horizontal">
+			<View class="fragment" height="25dp" layout="horizontal">
 				<Label class="heading">Order Status:</Label>
 				<Label class="something">New</Label>
 			</View>
-			<View class="fragment" height="100dp">
+			<View class="fragment" height="60dp">
 				<ImageView image="/images/statusbar-40px.png" top="10dp"></ImageView>
-			</View>
-			<View class="fragment" height="20dp">
-				<Label class="heading">Order Status</Label>
 			</View>
 		</View>
 	</TableViewRow>

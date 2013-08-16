@@ -25,5 +25,5 @@ $.isoTable.addEventListener('click', function(e){
 	Ti.API.info($.home.title);
 	var detailWindow = Alloy.createController('IsoDetailView').getView();
 	detailWindow.data = e.rowData;
-	detailWindow.open();
+	detailWindow.open({animated: true});
 });

@@ -17,8 +17,8 @@ function Controller() {
     $.__views.isoDetailTable = Ti.UI.createTableView({
         backgroundColor: "#cccccc",
         separatorColor: "transparent",
-        id: "isoDetailTable",
-        separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
+        separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE,
+        id: "isoDetailTable"
     });
     $.__views.IsoDetailView.add($.__views.isoDetailTable);
     exports.destroy = function() {};
@@ -26,7 +26,8 @@ function Controller() {
     var siteInfoView = Alloy.createController("IsoDetails/SiteInfo").getView();
     var frcOrderView = Alloy.createController("IsoDetails/FRCOrder").getView();
     var progressBarView = Alloy.createController("IsoDetails/ISOProgressBar").getView();
-    var rows = [ progressBarView, siteInfoView, frcOrderView ];
+    var frsocialOrderView = Alloy.createController("IsoDetails/FRSocialOrder").getView();
+    var rows = [ progressBarView, siteInfoView, frcOrderView, frsocialOrderView ];
     $.isoDetailTable.data = rows;
     _.extend($, exports);
 }

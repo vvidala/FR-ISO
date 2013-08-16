@@ -1,6 +1,11 @@
 <Alloy>
 	<Window class="container" title="River View Park Apartment Homes">
-		<TableView id="isoDetailTable" separatorStyle="Ti.UI.iPhone.TableViewSeparatorStyle.NONE">
+		<Menu id="menu" platform="android">
+            <MenuItem id="menuItem" title="Edit" icon="/images/5_content_edit.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+            <MenuItem id="menuItem" title="Bookmark" icon="/images/3_rating_not_important.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+            <MenuItem id="menuItem" title="Help" icon="/images/2_action_help.png" showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
+        </Menu> 
+		<TableView id="isoDetailTable">
 		</TableView>
 	</Window>
 </Alloy>

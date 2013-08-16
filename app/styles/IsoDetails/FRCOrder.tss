@@ -1,10 +1,10 @@
 ".container": {
 	backgroundColor: "transparent",
-	height: "310dp"
+	height: "320dp"
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "300dp",
+	height: "310dp",
 	borderRadius: "12dp",
 	width: "98%"
 }

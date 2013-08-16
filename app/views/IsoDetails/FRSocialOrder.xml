@@ -2,7 +2,7 @@
 	<TableViewRow class="container" hasChild="false">
 		<View id="contents" layout="vertical">
 			<View class="fragment" height="25dp">
-				<Label class="heading">Apartment Information</Label>
+				<Label class="heading">FRSocial Order</Label>
 			</View>
 			<View class="fragment">
 				<View layout="vertical" width="15%" left="0%">

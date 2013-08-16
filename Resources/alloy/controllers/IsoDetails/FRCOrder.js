@@ -8,14 +8,14 @@ function Controller() {
     var exports = {};
     $.__views.FRCOrder = Ti.UI.createTableViewRow({
         backgroundColor: "transparent",
-        height: "310dp",
+        height: "320dp",
         hasChild: "false",
         id: "FRCOrder"
     });
     $.__views.FRCOrder && $.addTopLevelView($.__views.FRCOrder);
     $.__views.contents = Ti.UI.createView({
         backgroundColor: "#eee",
-        height: "300dp",
+        height: "310dp",
         borderRadius: "12dp",
         width: "98%",
         id: "contents",
@@ -25,7 +25,7 @@ function Controller() {
     $.__views.__alloyId15 = Ti.UI.createView({
         width: "98%",
         top: "10dp",
-        height: "20dp",
+        height: "25dp",
         id: "__alloyId15"
     });
     $.__views.contents.add($.__views.__alloyId15);
@@ -39,14 +39,14 @@ function Controller() {
         left: "5dp",
         width: "100%",
         ellipsize: true,
-        text: "ForRent.Com",
+        text: "ForRent.Com Order",
         id: "__alloyId16"
     });
     $.__views.__alloyId15.add($.__views.__alloyId16);
     $.__views.__alloyId17 = Ti.UI.createView({
         width: "98%",
         top: "10dp",
-        height: "100dp",
+        height: "110dp",
         id: "__alloyId17"
     });
     $.__views.contents.add($.__views.__alloyId17);
