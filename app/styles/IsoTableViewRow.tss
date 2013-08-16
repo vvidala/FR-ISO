@@ -1,10 +1,11 @@
 ".container": {
 	backgroundColor: "transparent",
-	height: "62dp"
+	height: "68dp"
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "60dp"
+	height: "60dp",
+	width: "98%"
 }
 "Label": {
 	font: {

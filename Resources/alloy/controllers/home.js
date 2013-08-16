@@ -1,7 +1,9 @@
 function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
+    this.__controllerPath = "home";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
+    arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
     $.__views.home = Ti.UI.createTabGroup({
@@ -23,12 +25,12 @@ function Controller() {
         separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });
     $.__views.mainWindow.add($.__views.isoTable);
-    $.__views.__alloyId46 = Ti.UI.createTab({
+    $.__views.__alloyId55 = Ti.UI.createTab({
         window: $.__views.mainWindow,
         title: "whatever",
-        id: "__alloyId46"
+        id: "__alloyId55"
     });
-    $.__views.home.addTab($.__views.__alloyId46);
+    $.__views.home.addTab($.__views.__alloyId55);
     $.__views.home && $.addTopLevelView($.__views.home);
     exports.destroy = function() {};
     _.extend($, $.__views);

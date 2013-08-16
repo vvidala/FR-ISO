@@ -1,7 +1,9 @@
 function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
+    this.__controllerPath = "IsoDetailView";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
+    arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
     $.__views.IsoDetailView = Ti.UI.createWindow({
@@ -22,7 +24,8 @@ function Controller() {
     _.extend($, $.__views);
     var siteInfoView = Alloy.createController("IsoDetails/SiteInfo").getView();
     var frcOrderView = Alloy.createController("IsoDetails/FRCOrder").getView();
-    var rows = [ siteInfoView, frcOrderView ];
+    var progressBarView = Alloy.createController("IsoDetails/ISOProgressBar").getView();
+    var rows = [ progressBarView, siteInfoView, frcOrderView ];
     $.isoDetailTable.data = rows;
     _.extend($, exports);
 }

@@ -1,29 +1,16 @@
 ".container": {
 	backgroundColor: "transparent",
-	height: "310dp"
+	height: "130dp"
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "300dp",
+	height: "120dp",
 	borderRadius: "12dp",
 	width: "98%"
-}
-"Label": {
-	font: {
-		fontFamily: "Open Sans, Verdana, Geneva",
-		fontSize: "16dp"
-	},
-	top: "5dp",
-	left: "5dp",
-	color: "#333",
-	width: "100%"
 },
 ".fragment": {
 	width: "98%",
 	top: "10dp"
-}
-".dynamic": {
-	color: "#111"
 },
 ".heading": {
 	font: {
@@ -32,6 +19,15 @@
 	},
 	top: 0,
 	ellipsize: true,
-	color: "#111",
-	width: "100%"
+	color: "#111"
+},
+".something": {
+	top: 0,
+	left: "10dp",
+	font: {
+		fontSize: "20dp",
+		fontWeight: "bold"
+	},
+	ellipsize: true,
+	color: "#0574B1"
 }

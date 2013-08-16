@@ -1,19 +1,21 @@
 function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
+    this.__controllerPath = "IsoDetails/FRCOrder";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
+    arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
     $.__views.FRCOrder = Ti.UI.createTableViewRow({
         backgroundColor: "transparent",
-        height: "250dp",
+        height: "310dp",
         hasChild: "false",
         id: "FRCOrder"
     });
     $.__views.FRCOrder && $.addTopLevelView($.__views.FRCOrder);
     $.__views.contents = Ti.UI.createView({
         backgroundColor: "#eee",
-        height: "240dp",
+        height: "300dp",
         borderRadius: "12dp",
         width: "98%",
         id: "contents",
@@ -50,7 +52,7 @@ function Controller() {
     $.__views.contents.add($.__views.__alloyId17);
     $.__views.__alloyId18 = Ti.UI.createView({
         layout: "vertical",
-        width: "15%",
+        width: "25%",
         left: "0%",
         id: "__alloyId18"
     });
@@ -109,8 +111,8 @@ function Controller() {
     $.__views.__alloyId18.add($.__views.__alloyId22);
     $.__views.__alloyId23 = Ti.UI.createView({
         layout: "vertical",
-        width: "45%",
-        left: "15%",
+        width: "25%",
+        left: "25%",
         id: "__alloyId23"
     });
     $.__views.__alloyId17.add($.__views.__alloyId23);
@@ -136,7 +138,7 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         width: "100%",
-        text: "______",
+        text: "------",
         id: "printAdSize"
     });
     $.__views.__alloyId23.add($.__views.printAdSize);
@@ -149,7 +151,7 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         width: "100%",
-        text: "______",
+        text: "------",
         id: "fruPackage"
     });
     $.__views.__alloyId23.add($.__views.fruPackage);
@@ -168,8 +170,8 @@ function Controller() {
     $.__views.__alloyId23.add($.__views.numSpotlights);
     $.__views.__alloyId24 = Ti.UI.createView({
         layout: "vertical",
-        width: "15%",
-        left: "60%",
+        width: "25%",
+        left: "50%",
         id: "__alloyId24"
     });
     $.__views.__alloyId17.add($.__views.__alloyId24);
@@ -195,7 +197,7 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         width: "100%",
-        text: "Internet Package:",
+        text: "Internet Pkg:",
         id: "__alloyId26"
     });
     $.__views.__alloyId24.add($.__views.__alloyId26);
@@ -241,7 +243,7 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         width: "100%",
-        text: "______",
+        text: "------",
         id: "internetPkg"
     });
     $.__views.__alloyId28.add($.__views.internetPkg);
@@ -261,12 +263,19 @@ function Controller() {
     $.__views.__alloyId29 = Ti.UI.createView({
         width: "98%",
         top: "0",
-        height: "90dp",
+        height: "150dp",
         layout: "horizontal",
         id: "__alloyId29"
     });
     $.__views.contents.add($.__views.__alloyId29);
-    $.__views.__alloyId30 = Ti.UI.createLabel({
+    $.__views.__alloyId30 = Ti.UI.createView({
+        layout: "vertical",
+        width: "20%",
+        left: "0%",
+        id: "__alloyId30"
+    });
+    $.__views.__alloyId29.add($.__views.__alloyId30);
+    $.__views.__alloyId31 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -275,10 +284,29 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         width: "100%",
-        text: "Comments: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        id: "__alloyId30"
+        text: "Comments:",
+        id: "__alloyId31"
     });
-    $.__views.__alloyId29.add($.__views.__alloyId30);
+    $.__views.__alloyId30.add($.__views.__alloyId31);
+    $.__views.__alloyId32 = Ti.UI.createView({
+        layout: "vertical",
+        width: "78%",
+        id: "__alloyId32"
+    });
+    $.__views.__alloyId29.add($.__views.__alloyId32);
+    $.__views.comments = Ti.UI.createLabel({
+        font: {
+            fontFamily: "Open Sans, Verdana, Geneva",
+            fontSize: "16dp"
+        },
+        color: "#111",
+        top: "5dp",
+        left: "5dp",
+        width: "100%",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        id: "comments"
+    });
+    $.__views.__alloyId32.add($.__views.comments);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

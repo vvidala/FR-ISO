@@ -1,12 +1,14 @@
 function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
+    this.__controllerPath = "IsoTableViewRow";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
+    arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
     $.__views.IsoTableViewRow = Ti.UI.createTableViewRow({
         backgroundColor: "transparent",
-        height: "62dp",
+        height: "68dp",
         hasChild: "false",
         id: "IsoTableViewRow"
     });
@@ -14,6 +16,7 @@ function Controller() {
     $.__views.contents = Ti.UI.createView({
         backgroundColor: "#eee",
         height: "60dp",
+        width: "98%",
         id: "contents"
     });
     $.__views.IsoTableViewRow.add($.__views.contents);
