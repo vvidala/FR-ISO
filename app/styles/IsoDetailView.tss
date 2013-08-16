@@ -4,5 +4,6 @@
 	hideTabBar: true
 },
 "TableView": {
-	backgroundColor: "#cccccc"
+	backgroundColor: "#cccccc",
+	separatorColor:'transparent'
 }

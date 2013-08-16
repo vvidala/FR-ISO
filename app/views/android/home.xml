@@ -5,6 +5,6 @@
             <MenuItem id="menuItem" title="Refresh" icon="/images/navigation_refresh.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
             <MenuItem id="menuItem" title="Item 3" icon="/images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
         </Menu> 
-		<TableView id="isoTable" separatorStyle="Ti.UI.iPhone.TableViewSeparatorStyle.NONE"></TableView>
+		<TableView id="isoTable"></TableView>
 	</Window>
 </Alloy>

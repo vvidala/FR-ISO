@@ -16,6 +16,7 @@ function Controller() {
     $.__views.IsoDetailView && $.addTopLevelView($.__views.IsoDetailView);
     $.__views.isoDetailTable = Ti.UI.createTableView({
         backgroundColor: "#cccccc",
+        separatorColor: "transparent",
         id: "isoDetailTable",
         separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });

@@ -33,7 +33,7 @@ var type = [
 	"images/new-icon.png",
 	"images/thumbs-up-icon.png",
 	"images/thumbs-down-icon.png"
-]
+];
 for(var i=0; i<10; i++){ 
 	var row = Alloy.createController('IsoTableViewRow');
 	row.websiteIcon.image = websites[Math.floor((Math.random()*3))];
@@ -47,4 +47,4 @@ $.isoTable.addEventListener('click', function(e){
 	detailWindow.data = e.rowData;
 	$.home.activeTab.open(detailWindow);
 	//$.mainWindow.containingTab.open(win);
-})
+});

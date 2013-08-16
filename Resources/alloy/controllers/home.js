@@ -21,6 +21,7 @@ function Controller() {
     });
     $.__views.isoTable = Ti.UI.createTableView({
         backgroundColor: "#cccccc",
+        separatorColor: "transparent",
         id: "isoTable",
         separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
     });
