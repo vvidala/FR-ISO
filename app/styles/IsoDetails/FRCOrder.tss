@@ -1,10 +1,13 @@
+"View": {
+	height: Ti.UI.SIZE
+},
 ".container": {
 	backgroundColor: "transparent",
-	height: "320dp"
+	height: Ti.UI.SIZE
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "310dp",
+	height: Ti.UI.SIZE,
 	borderRadius: "12dp",
 	width: "98%"
 }
@@ -16,12 +19,12 @@
 	top: "5dp",
 	left: "5dp",
 	color: "#333",
-	width: "100%"
+	width: Ti.UI.FILL
 },
 ".fragment": {
 	width: "98%",
 	top: "10dp"
-}
+},
 ".dynamic": {
 	color: "#111"
 },
@@ -34,4 +37,7 @@
 	ellipsize: true,
 	color: "#111",
 	width: "100%"
+},
+".padding": {
+	height: "10dp"
 }

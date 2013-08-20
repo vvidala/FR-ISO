@@ -24,15 +24,15 @@ function Controller() {
         touchEnabled: "false"
     });
     $.__views.ISOProgressBar.add($.__views.contents);
-    $.__views.__alloyId48 = Ti.UI.createView({
+    $.__views.__alloyId50 = Ti.UI.createView({
         width: "98%",
         top: "10dp",
         height: "25dp",
         layout: "horizontal",
-        id: "__alloyId48"
+        id: "__alloyId50"
     });
-    $.__views.contents.add($.__views.__alloyId48);
-    $.__views.__alloyId49 = Ti.UI.createLabel({
+    $.__views.contents.add($.__views.__alloyId50);
+    $.__views.__alloyId51 = Ti.UI.createLabel({
         font: {
             fontSize: "20dp",
             fontWeight: "bold"
@@ -41,10 +41,10 @@ function Controller() {
         top: 0,
         ellipsize: true,
         text: "Order Status:",
-        id: "__alloyId49"
+        id: "__alloyId51"
     });
-    $.__views.__alloyId48.add($.__views.__alloyId49);
-    $.__views.__alloyId50 = Ti.UI.createLabel({
+    $.__views.__alloyId50.add($.__views.__alloyId51);
+    $.__views.__alloyId52 = Ti.UI.createLabel({
         font: {
             fontSize: "20dp",
             fontWeight: "bold"
@@ -54,22 +54,22 @@ function Controller() {
         left: "10dp",
         ellipsize: true,
         text: "New",
-        id: "__alloyId50"
+        id: "__alloyId52"
     });
-    $.__views.__alloyId48.add($.__views.__alloyId50);
-    $.__views.__alloyId51 = Ti.UI.createView({
+    $.__views.__alloyId50.add($.__views.__alloyId52);
+    $.__views.__alloyId53 = Ti.UI.createView({
         width: "98%",
         top: "10dp",
         height: "60dp",
-        id: "__alloyId51"
+        id: "__alloyId53"
     });
-    $.__views.contents.add($.__views.__alloyId51);
-    $.__views.__alloyId52 = Ti.UI.createImageView({
+    $.__views.contents.add($.__views.__alloyId53);
+    $.__views.__alloyId54 = Ti.UI.createImageView({
         image: "/images/statusbar-40px.png",
         top: "10dp",
-        id: "__alloyId52"
+        id: "__alloyId54"
     });
-    $.__views.__alloyId51.add($.__views.__alloyId52);
+    $.__views.__alloyId53.add($.__views.__alloyId54);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

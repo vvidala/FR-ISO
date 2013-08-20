@@ -1,10 +1,10 @@
 <Alloy>
 	<TableViewRow class="container" hasChild="false">
 		<View id="contents" layout="vertical">
-			<View class="fragment" height="25dp">
+			<View class="fragment">
 				<Label class="heading">ForRent.Com Order</Label>
 			</View>
-			<View class="fragment" height="110dp">
+			<View class="fragment">
 				<View layout="vertical" width="25%" left="0%">
 					<Label>Campaign Start:</Label>
 					<Label>Print Ad Size:</Label>
@@ -28,14 +28,23 @@
 					<Label id="translationUpg" class="dynamic">NO</Label>
 				</View>
 			</View>
-			<View class="fragment" height="150dp" top="0" layout="horizontal">
-				<View layout="vertical" width="20%" left="0%">
+			<View class="fragment" height="Ti.UI.SIZE" top="0" layout="horizontal">
+				<View layout="vertical" width="20%" top="0dp" left="0%">
 					<Label>Comments:</Label>
 				</View>
 				<View layout="vertical" width="78%">
-					<Label id="comments" class="dynamic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Label>
+					<Label id="comments" class="dynamic" height="Ti.UI.SIZE">ISO Notes: CS Notes: 3/14 - Contacted. 3/4 Page is ready4/14/2011- 2nd Contacted for Welcome
+09/30 Resent 3rd  Welcome email to social contact and AE. Pending for Social Contact to be Admin.
+
+1/19/12: Resent MPE welcome email (CC'd AE)
+
+7-16. Followed up with welcome email to property, sent followup email to AE. 5x contacting
+https://www.facebook.com/pages/Pine-Creek-Village/172176792829624
+
+9.18. Fwded email to Lisa Cumar and copied in GSM Jason Villarreal to see if property is still interested in package.</Label>
 				</View>
 			</View>
+			<View class="fragment padding" top="0"> <Label></Label></View>
 		</View>
 	</TableViewRow>
 </Alloy>

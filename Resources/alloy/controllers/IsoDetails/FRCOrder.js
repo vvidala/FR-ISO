@@ -8,14 +8,14 @@ function Controller() {
     var exports = {};
     $.__views.FRCOrder = Ti.UI.createTableViewRow({
         backgroundColor: "transparent",
-        height: "320dp",
+        height: Ti.UI.SIZE,
         hasChild: "false",
         id: "FRCOrder"
     });
     $.__views.FRCOrder && $.addTopLevelView($.__views.FRCOrder);
     $.__views.contents = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         backgroundColor: "#eee",
-        height: "310dp",
         borderRadius: "12dp",
         width: "98%",
         id: "contents",
@@ -23,9 +23,9 @@ function Controller() {
     });
     $.__views.FRCOrder.add($.__views.contents);
     $.__views.__alloyId15 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         width: "98%",
         top: "10dp",
-        height: "25dp",
         id: "__alloyId15"
     });
     $.__views.contents.add($.__views.__alloyId15);
@@ -44,13 +44,14 @@ function Controller() {
     });
     $.__views.__alloyId15.add($.__views.__alloyId16);
     $.__views.__alloyId17 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         width: "98%",
         top: "10dp",
-        height: "110dp",
         id: "__alloyId17"
     });
     $.__views.contents.add($.__views.__alloyId17);
     $.__views.__alloyId18 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         layout: "vertical",
         width: "25%",
         left: "0%",
@@ -65,7 +66,7 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "Campaign Start:",
         id: "__alloyId19"
     });
@@ -78,7 +79,7 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "Print Ad Size:",
         id: "__alloyId20"
     });
@@ -91,7 +92,7 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "FRU Package:",
         id: "__alloyId21"
     });
@@ -104,12 +105,13 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "# of spotlights:",
         id: "__alloyId22"
     });
     $.__views.__alloyId18.add($.__views.__alloyId22);
     $.__views.__alloyId23 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         layout: "vertical",
         width: "25%",
         left: "25%",
@@ -124,7 +126,7 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "2013-09-12",
         id: "campaignDate"
     });
@@ -137,7 +139,7 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "------",
         id: "printAdSize"
     });
@@ -150,7 +152,7 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "------",
         id: "fruPackage"
     });
@@ -163,12 +165,13 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "0",
         id: "numSpotlights"
     });
     $.__views.__alloyId23.add($.__views.numSpotlights);
     $.__views.__alloyId24 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         layout: "vertical",
         width: "25%",
         left: "50%",
@@ -183,7 +186,7 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "Billing Date:",
         id: "__alloyId25"
     });
@@ -196,7 +199,7 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "Internet Pkg:",
         id: "__alloyId26"
     });
@@ -209,12 +212,13 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "Translation Upg:",
         id: "__alloyId27"
     });
     $.__views.__alloyId24.add($.__views.__alloyId27);
     $.__views.__alloyId28 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         layout: "vertical",
         width: "25%",
         left: "75%",
@@ -229,7 +233,7 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "2013-09-15",
         id: "billDate"
     });
@@ -242,7 +246,7 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "------",
         id: "internetPkg"
     });
@@ -255,22 +259,24 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "NO",
         id: "translationUpg"
     });
     $.__views.__alloyId28.add($.__views.translationUpg);
     $.__views.__alloyId29 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         width: "98%",
         top: "0",
-        height: "150dp",
         layout: "horizontal",
         id: "__alloyId29"
     });
     $.__views.contents.add($.__views.__alloyId29);
     $.__views.__alloyId30 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         layout: "vertical",
         width: "20%",
+        top: "0dp",
         left: "0%",
         id: "__alloyId30"
     });
@@ -283,12 +289,13 @@ function Controller() {
         color: "#333",
         top: "5dp",
         left: "5dp",
-        width: "100%",
+        width: Ti.UI.FILL,
         text: "Comments:",
         id: "__alloyId31"
     });
     $.__views.__alloyId30.add($.__views.__alloyId31);
     $.__views.__alloyId32 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         layout: "vertical",
         width: "78%",
         id: "__alloyId32"
@@ -302,11 +309,31 @@ function Controller() {
         color: "#111",
         top: "5dp",
         left: "5dp",
-        width: "100%",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        id: "comments"
+        width: Ti.UI.FILL,
+        text: "",
+        id: "comments",
+        height: Ti.UI.SIZE
     });
     $.__views.__alloyId32.add($.__views.comments);
+    $.__views.__alloyId33 = Ti.UI.createView({
+        height: "10dp",
+        width: "98%",
+        top: "0",
+        id: "__alloyId33"
+    });
+    $.__views.contents.add($.__views.__alloyId33);
+    $.__views.__alloyId34 = Ti.UI.createLabel({
+        font: {
+            fontFamily: "Open Sans, Verdana, Geneva",
+            fontSize: "16dp"
+        },
+        color: "#333",
+        top: "5dp",
+        left: "5dp",
+        width: Ti.UI.FILL,
+        id: "__alloyId34"
+    });
+    $.__views.__alloyId33.add($.__views.__alloyId34);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);
