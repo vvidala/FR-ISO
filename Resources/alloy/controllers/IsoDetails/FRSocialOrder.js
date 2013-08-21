@@ -15,21 +15,20 @@ function Controller() {
     $.__views.FRSocialOrder && $.addTopLevelView($.__views.FRSocialOrder);
     $.__views.contents = Ti.UI.createView({
         backgroundColor: "#eee",
-        height: "150dp",
         borderRadius: "12dp",
         width: "98%",
         id: "contents",
         layout: "vertical"
     });
     $.__views.FRSocialOrder.add($.__views.contents);
-    $.__views.__alloyId35 = Ti.UI.createView({
+    $.__views.__alloyId33 = Ti.UI.createView({
         width: "98%",
         top: "5dp",
         height: "25dp",
-        id: "__alloyId35"
+        id: "__alloyId33"
     });
-    $.__views.contents.add($.__views.__alloyId35);
-    $.__views.__alloyId36 = Ti.UI.createLabel({
+    $.__views.contents.add($.__views.__alloyId33);
+    $.__views.__alloyId34 = Ti.UI.createLabel({
         font: {
             fontSize: "20dp",
             fontWeight: "bold"
@@ -40,23 +39,23 @@ function Controller() {
         ellipsize: true,
         width: "100%",
         text: "FRSocial Order",
-        id: "__alloyId36"
+        id: "__alloyId34"
     });
-    $.__views.__alloyId35.add($.__views.__alloyId36);
-    $.__views.__alloyId37 = Ti.UI.createView({
+    $.__views.__alloyId33.add($.__views.__alloyId34);
+    $.__views.__alloyId35 = Ti.UI.createView({
         width: "98%",
         top: "5dp",
-        id: "__alloyId37"
+        id: "__alloyId35"
     });
-    $.__views.contents.add($.__views.__alloyId37);
-    $.__views.__alloyId38 = Ti.UI.createView({
+    $.__views.contents.add($.__views.__alloyId35);
+    $.__views.__alloyId36 = Ti.UI.createView({
         layout: "vertical",
         width: "15%",
         left: "0%",
-        id: "__alloyId38"
+        id: "__alloyId36"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId38);
-    $.__views.__alloyId39 = Ti.UI.createLabel({
+    $.__views.__alloyId35.add($.__views.__alloyId36);
+    $.__views.__alloyId37 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -65,10 +64,10 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "Apt Name:",
-        id: "__alloyId39"
+        id: "__alloyId37"
     });
-    $.__views.__alloyId38.add($.__views.__alloyId39);
-    $.__views.__alloyId40 = Ti.UI.createLabel({
+    $.__views.__alloyId36.add($.__views.__alloyId37);
+    $.__views.__alloyId38 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -77,10 +76,10 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "PMC:",
-        id: "__alloyId40"
+        id: "__alloyId38"
     });
-    $.__views.__alloyId38.add($.__views.__alloyId40);
-    $.__views.__alloyId41 = Ti.UI.createLabel({
+    $.__views.__alloyId36.add($.__views.__alloyId38);
+    $.__views.__alloyId39 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -89,10 +88,10 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "City Office:",
-        id: "__alloyId41"
+        id: "__alloyId39"
     });
-    $.__views.__alloyId38.add($.__views.__alloyId41);
-    $.__views.__alloyId42 = Ti.UI.createLabel({
+    $.__views.__alloyId36.add($.__views.__alloyId39);
+    $.__views.__alloyId40 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -101,16 +100,16 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "Employee:",
-        id: "__alloyId42"
+        id: "__alloyId40"
     });
-    $.__views.__alloyId38.add($.__views.__alloyId42);
-    $.__views.__alloyId43 = Ti.UI.createView({
+    $.__views.__alloyId36.add($.__views.__alloyId40);
+    $.__views.__alloyId41 = Ti.UI.createView({
         layout: "vertical",
         width: "45%",
         left: "15%",
-        id: "__alloyId43"
+        id: "__alloyId41"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId43);
+    $.__views.__alloyId35.add($.__views.__alloyId41);
     $.__views.aptName = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -125,7 +124,7 @@ function Controller() {
         text: "River View Park Aparment Homes",
         id: "aptName"
     });
-    $.__views.__alloyId43.add($.__views.aptName);
+    $.__views.__alloyId41.add($.__views.aptName);
     $.__views.pmc = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -140,7 +139,7 @@ function Controller() {
         text: "Pine Creek Investments",
         id: "pmc"
     });
-    $.__views.__alloyId43.add($.__views.pmc);
+    $.__views.__alloyId41.add($.__views.pmc);
     $.__views.cityOffice = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -155,7 +154,7 @@ function Controller() {
         text: "Atlanta, GA",
         id: "cityOffice"
     });
-    $.__views.__alloyId43.add($.__views.cityOffice);
+    $.__views.__alloyId41.add($.__views.cityOffice);
     $.__views.employee = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -170,15 +169,15 @@ function Controller() {
         text: "WHITNEY A SULLENDER",
         id: "employee"
     });
-    $.__views.__alloyId43.add($.__views.employee);
-    $.__views.__alloyId44 = Ti.UI.createView({
+    $.__views.__alloyId41.add($.__views.employee);
+    $.__views.__alloyId42 = Ti.UI.createView({
         layout: "vertical",
         width: "15%",
         left: "60%",
-        id: "__alloyId44"
+        id: "__alloyId42"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId44);
-    $.__views.__alloyId45 = Ti.UI.createLabel({
+    $.__views.__alloyId35.add($.__views.__alloyId42);
+    $.__views.__alloyId43 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -187,10 +186,10 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "Site Id:",
-        id: "__alloyId45"
+        id: "__alloyId43"
     });
-    $.__views.__alloyId44.add($.__views.__alloyId45);
-    $.__views.__alloyId46 = Ti.UI.createLabel({
+    $.__views.__alloyId42.add($.__views.__alloyId43);
+    $.__views.__alloyId44 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -199,10 +198,10 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "Assigned To:",
-        id: "__alloyId46"
+        id: "__alloyId44"
     });
-    $.__views.__alloyId44.add($.__views.__alloyId46);
-    $.__views.__alloyId47 = Ti.UI.createLabel({
+    $.__views.__alloyId42.add($.__views.__alloyId44);
+    $.__views.__alloyId45 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -211,10 +210,10 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "Account #:",
-        id: "__alloyId47"
+        id: "__alloyId45"
     });
-    $.__views.__alloyId44.add($.__views.__alloyId47);
-    $.__views.__alloyId48 = Ti.UI.createLabel({
+    $.__views.__alloyId42.add($.__views.__alloyId45);
+    $.__views.__alloyId46 = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
             fontSize: "16dp"
@@ -223,16 +222,16 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         text: "Contract #:",
-        id: "__alloyId48"
+        id: "__alloyId46"
     });
-    $.__views.__alloyId44.add($.__views.__alloyId48);
-    $.__views.__alloyId49 = Ti.UI.createView({
+    $.__views.__alloyId42.add($.__views.__alloyId46);
+    $.__views.__alloyId47 = Ti.UI.createView({
         layout: "vertical",
         width: "25%",
         left: "75%",
-        id: "__alloyId49"
+        id: "__alloyId47"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId49);
+    $.__views.__alloyId35.add($.__views.__alloyId47);
     $.__views.siteId = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -247,7 +246,7 @@ function Controller() {
         text: "1000010783",
         id: "siteId"
     });
-    $.__views.__alloyId49.add($.__views.siteId);
+    $.__views.__alloyId47.add($.__views.siteId);
     $.__views.assignedTo = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -262,7 +261,7 @@ function Controller() {
         text: "sderbes",
         id: "assignedTo"
     });
-    $.__views.__alloyId49.add($.__views.assignedTo);
+    $.__views.__alloyId47.add($.__views.assignedTo);
     $.__views.accountNum = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -277,7 +276,7 @@ function Controller() {
         text: "1300574",
         id: "accountNum"
     });
-    $.__views.__alloyId49.add($.__views.accountNum);
+    $.__views.__alloyId47.add($.__views.accountNum);
     $.__views.contractNum = Ti.UI.createLabel({
         font: {
             fontFamily: "Open Sans, Verdana, Geneva",
@@ -292,7 +291,7 @@ function Controller() {
         text: "---------",
         id: "contractNum"
     });
-    $.__views.__alloyId49.add($.__views.contractNum);
+    $.__views.__alloyId47.add($.__views.contractNum);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

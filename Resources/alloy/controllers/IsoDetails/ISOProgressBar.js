@@ -8,31 +8,34 @@ function Controller() {
     var exports = {};
     $.__views.ISOProgressBar = Ti.UI.createTableViewRow({
         backgroundColor: "transparent",
-        height: "130dp",
-        hasChild: "false",
+        height: Ti.UI.SIZE,
         touchEnabled: "false",
+        hasChild: "false",
+        selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         id: "ISOProgressBar"
     });
     $.__views.ISOProgressBar && $.addTopLevelView($.__views.ISOProgressBar);
     $.__views.contents = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         backgroundColor: "#eee",
-        height: "120dp",
         borderRadius: "12dp",
         width: "98%",
+        top: "5dp",
+        bottom: "5dp",
         id: "contents",
         layout: "vertical",
         touchEnabled: "false"
     });
     $.__views.ISOProgressBar.add($.__views.contents);
-    $.__views.__alloyId50 = Ti.UI.createView({
+    $.__views.__alloyId48 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         width: "98%",
         top: "10dp",
-        height: "25dp",
         layout: "horizontal",
-        id: "__alloyId50"
+        id: "__alloyId48"
     });
-    $.__views.contents.add($.__views.__alloyId50);
-    $.__views.__alloyId51 = Ti.UI.createLabel({
+    $.__views.contents.add($.__views.__alloyId48);
+    $.__views.__alloyId49 = Ti.UI.createLabel({
         font: {
             fontSize: "20dp",
             fontWeight: "bold"
@@ -41,10 +44,10 @@ function Controller() {
         top: 0,
         ellipsize: true,
         text: "Order Status:",
-        id: "__alloyId51"
+        id: "__alloyId49"
     });
-    $.__views.__alloyId50.add($.__views.__alloyId51);
-    $.__views.__alloyId52 = Ti.UI.createLabel({
+    $.__views.__alloyId48.add($.__views.__alloyId49);
+    $.__views.statusLabel = Ti.UI.createLabel({
         font: {
             fontSize: "20dp",
             fontWeight: "bold"
@@ -54,22 +57,23 @@ function Controller() {
         left: "10dp",
         ellipsize: true,
         text: "New",
-        id: "__alloyId52"
+        id: "statusLabel"
     });
-    $.__views.__alloyId50.add($.__views.__alloyId52);
-    $.__views.__alloyId53 = Ti.UI.createView({
+    $.__views.__alloyId48.add($.__views.statusLabel);
+    $.__views.__alloyId50 = Ti.UI.createView({
+        height: Ti.UI.SIZE,
         width: "98%",
         top: "10dp",
-        height: "60dp",
-        id: "__alloyId53"
+        bottom: "10dp",
+        id: "__alloyId50"
     });
-    $.__views.contents.add($.__views.__alloyId53);
-    $.__views.__alloyId54 = Ti.UI.createImageView({
+    $.__views.contents.add($.__views.__alloyId50);
+    $.__views.__alloyId51 = Ti.UI.createImageView({
         image: "/images/statusbar-40px.png",
         top: "10dp",
-        id: "__alloyId54"
+        id: "__alloyId51"
     });
-    $.__views.__alloyId53.add($.__views.__alloyId54);
+    $.__views.__alloyId50.add($.__views.__alloyId51);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

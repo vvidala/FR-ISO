@@ -28,7 +28,7 @@
 					<Label id="translationUpg" class="dynamic">NO</Label>
 				</View>
 			</View>
-			<View class="fragment" height="Ti.UI.SIZE" top="0" layout="horizontal">
+			<View class="fragment bottomFragment" height="Ti.UI.SIZE" top="0" layout="horizontal">
 				<View layout="vertical" width="20%" top="0dp" left="0%">
 					<Label>Comments:</Label>
 				</View>
@@ -44,7 +44,6 @@ https://www.facebook.com/pages/Pine-Creek-Village/172176792829624
 9.18. Fwded email to Lisa Cumar and copied in GSM Jason Villarreal to see if property is still interested in package.</Label>
 				</View>
 			</View>
-			<View class="fragment padding" top="0"> <Label></Label></View>
 		</View>
 	</TableViewRow>
 </Alloy>

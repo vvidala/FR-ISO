@@ -1,10 +1,10 @@
 <Alloy>
 	<TableViewRow class="container" hasChild="false">
 		<View id="contents" layout="vertical">
-			<View class="fragment" height="25dp">
+			<View class="fragment">
 				<Label class="heading">Apartment Information</Label>
 			</View>
-			<View class="fragment">
+			<View class="fragment bottomFragment">
 				<View layout="vertical" width="15%" left="0%">
 					<Label>Apt Name:</Label>
 					<Label>PMC:</Label>

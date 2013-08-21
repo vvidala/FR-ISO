@@ -4,7 +4,6 @@
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "150dp",
 	borderRadius: "12dp",
 	width: "98%"
 }
@@ -32,6 +31,9 @@
 ".fragment": {
 	width: "98%",
 	top: "5dp"
+},
+".bottomFragment": {
+	bottom: "10dp"
 },
 ".heading": {
 	font: {

@@ -1,16 +1,24 @@
+"View": {
+	height: Ti.UI.SIZE
+},
 ".container": {
 	backgroundColor: "transparent",
-	height: "130dp"
+	height: Ti.UI.SIZE,
+	touchEnabled: false
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "120dp",
 	borderRadius: "12dp",
-	width: "98%"
+	width: "98%",
+	top: "5dp",
+	bottom: "5dp"
 },
 ".fragment": {
 	width: "98%",
 	top: "10dp"
+},
+".bottomFragment": {
+	bottom: "10dp"
 },
 ".heading": {
 	font: {
@@ -21,7 +29,7 @@
 	ellipsize: true,
 	color: "#111"
 },
-".something": {
+"#statusLabel": {
 	top: 0,
 	left: "10dp",
 	font: {

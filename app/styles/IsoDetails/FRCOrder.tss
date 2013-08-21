@@ -9,7 +9,9 @@
 	backgroundColor: "#eee",
 	height: Ti.UI.SIZE,
 	borderRadius: "12dp",
-	width: "98%"
+	width: "98%",
+	top: "5dp",
+	bottom: "5dp"
 }
 "Label": {
 	font: {
@@ -38,6 +40,6 @@
 	color: "#111",
 	width: "100%"
 },
-".padding": {
-	height: "10dp"
+".bottomFragment": {
+	bottom: "10dp"
 }

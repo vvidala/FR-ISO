@@ -1,13 +1,17 @@
+"View": {
+	height: Ti.UI.SIZE
+},
 ".container": {
 	backgroundColor: "transparent",
-	height: "160dp"
+	height: Ti.UI.SIZE
 },
 "#contents": {
 	backgroundColor: "#eee",
-	height: "150dp",
 	borderRadius: "12dp",
-	width: "98%"
-}
+	width: "98%",
+	top: "5dp",
+	bottom: "5dp"
+},
 "Label": {
 	font: {
 		fontFamily: "Open Sans, Verdana, Geneva",
@@ -33,6 +37,9 @@
 	width: "98%",
 	top: "5dp"
 },
+".bottomFragment": {
+	bottom: "10dp"
+}
 ".heading": {
 	font: {
 		fontSize: "20dp",

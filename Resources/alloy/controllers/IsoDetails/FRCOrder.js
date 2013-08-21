@@ -18,6 +18,8 @@ function Controller() {
         backgroundColor: "#eee",
         borderRadius: "12dp",
         width: "98%",
+        top: "5dp",
+        bottom: "5dp",
         id: "contents",
         layout: "vertical"
     });
@@ -268,6 +270,7 @@ function Controller() {
         height: Ti.UI.SIZE,
         width: "98%",
         top: "0",
+        bottom: "10dp",
         layout: "horizontal",
         id: "__alloyId29"
     });
@@ -310,30 +313,11 @@ function Controller() {
         top: "5dp",
         left: "5dp",
         width: Ti.UI.FILL,
-        text: "",
+        text: "ISO Notes: CS Notes: 3/14 - Contacted. 3/4 Page is ready4/14/2011- 2nd Contacted for Welcome\n09/30 Resent 3rd  Welcome email to social contact and AE. Pending for Social Contact to be Admin.\n\n1/19/12: Resent MPE welcome email (CC'd AE)\n\n7-16. Followed up with welcome email to property, sent followup email to AE. 5x contacting\nhttps://www.facebook.com/pages/Pine-Creek-Village/172176792829624\n\n9.18. Fwded email to Lisa Cumar and copied in GSM Jason Villarreal to see if property is still interested in package.",
         id: "comments",
         height: Ti.UI.SIZE
     });
     $.__views.__alloyId32.add($.__views.comments);
-    $.__views.__alloyId33 = Ti.UI.createView({
-        height: "10dp",
-        width: "98%",
-        top: "0",
-        id: "__alloyId33"
-    });
-    $.__views.contents.add($.__views.__alloyId33);
-    $.__views.__alloyId34 = Ti.UI.createLabel({
-        font: {
-            fontFamily: "Open Sans, Verdana, Geneva",
-            fontSize: "16dp"
-        },
-        color: "#333",
-        top: "5dp",
-        left: "5dp",
-        width: Ti.UI.FILL,
-        id: "__alloyId34"
-    });
-    $.__views.__alloyId33.add($.__views.__alloyId34);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

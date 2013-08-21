@@ -1,11 +1,11 @@
 <Alloy>
-	<TableViewRow class="container" hasChild="false" touchEnabled="false">
+	<TableViewRow class="container" hasChild="false" touchEnabled="false" selectionStyle="Ti.UI.iPhone.TableViewCellSelectionStyle.NONE">
 		<View id="contents" layout="vertical" touchEnabled="false">
-			<View class="fragment" height="25dp" layout="horizontal">
+			<View class="fragment" layout="horizontal">
 				<Label class="heading">Order Status:</Label>
-				<Label class="something">New</Label>
+				<Label id="statusLabel">New</Label>
 			</View>
-			<View class="fragment" height="60dp">
+			<View class="fragment bottomFragment">
 				<ImageView image="/images/statusbar-40px.png" top="10dp"></ImageView>
 			</View>
 		</View>
