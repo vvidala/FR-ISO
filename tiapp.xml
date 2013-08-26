@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.forrent.TabletTest</id>
-    <name>TabletTest</name>
+    <id>com.forrent.FrISO</id>
+    <name>FrISO</name>
     <version>1.0</version>
     <publisher>vamsi.vidala</publisher>
     <url>http://forrent.com</url>
@@ -29,11 +29,11 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-		<tool-api-level>18</tool-api-level>
-		<manifest android:installLocation="preferExternal">
-			<application android:theme="@android:style/Theme.Holo.Light"/>
-			<uses-sdk android:minSdkVersion="10" android:maxSdkVersion="18" />
-		</manifest>
+        <tool-api-level>18</tool-api-level>
+        <manifest android:installLocation="preferExternal">
+            <application android:theme="@android:style/Theme.Holo.Light"/>
+            <uses-sdk android:maxSdkVersion="18" android:minSdkVersion="10"/>
+        </manifest>
     </android>
     <mobileweb>
         <precache/>
